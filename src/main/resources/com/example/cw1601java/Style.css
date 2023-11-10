@@ -1,0 +1,441 @@
+
+.side_ankerpane{
+    -fx-background-color: #CDCDE8;
+}
+.inner_pane{
+    -fx-background-color:#767676;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.100), 0, 0, 3, 3);
+}
+
+.bar1{
+    -fx-background-color: linear-gradient(to bottom left, #ff7a7a, #ff3636);
+}
+
+.bar2{
+    -fx-background-color: linear-gradient(to bottom left, #c273ff, #9000ff);
+}
+.bar3{
+    -fx-background-color: linear-gradient(to bottom left, #ffbd75, #ff8400);
+}
+.bar4{
+    -fx-background-color: linear-gradient(to bottom left, #789ffa, #3873ff);
+}
+.bar5{
+    -fx-background-color: linear-gradient(to bottom left, #89e8cd, #00ba85);
+}
+
+.button1 {
+    -fx-background-color: #CDCDE8;
+    -fx-text-alignment: left;
+}
+
+.button1:hover {
+    -fx-background-color: #c5c5e8;
+}
+
+
+.button1:focused{
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color: #767676;
+    -fx-background-color: #CDCDE8;
+}
+
+.button1:pressed {
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color: #767676;
+    -fx-background-color: #d5d5eb;
+}
+
+.exitbtn {
+-fx-background-radius: 20px;
+-fx-background-color: #ff5757;
+-fx-text-alignment: left;
+}
+
+.exitbtn:hover {
+    -fx-background-color: #f52f2f;
+}
+
+.exitbtn:pressed {
+    -fx-background-color: #ff5757;
+}
+
+.backs{
+-fx-background-radius: 50px;
+}
+
+.buttonadd {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #00c724;
+}
+
+.buttonadd:hover {
+-fx-background-color: #04941e;
+}
+
+.buttonadd:pressed {
+-fx-background-color: #00c724;
+}
+
+.buttondelete {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #ff5757;
+}
+
+.buttondelete:hover {
+-fx-background-color: #f72525;
+}
+
+.buttondelete:pressed {
+-fx-background-color:  #ff5757;
+}
+.buttonupdate {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:  #ff7700;
+}
+
+.buttonupdate:hover {
+-fx-background-color: #e36a00;
+}
+
+.buttonupdate:pressed {
+-fx-background-color: #ff7700;
+}
+
+.buttonclear {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #6b7fff;
+}
+
+.buttonclear:hover {
+-fx-background-color: #425cff;
+}
+
+.buttonclear:pressed {
+-fx-background-color:  #6b7fff;
+}
+
+.buttonsearch{
+-fx-background-color:  #6b7fff;
+}
+
+.buttonsearch:hover {
+-fx-background-color: #425cff;
+}
+
+.buttonsearch:pressed {
+-fx-background-color: #6b7fff;
+}
+
+.buttonsort {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #9000ff;
+}
+
+.buttonsort:hover {
+-fx-background-color: #8002e0;
+}
+
+.buttonsort:pressed {
+-fx-background-color:  #9b19ff;
+}
+
+.buttonsave {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #00ba85;
+}
+
+.buttonsave:hover {
+-fx-background-color: #02966c;
+}
+
+.buttonsave:pressed {
+-fx-background-color:  #02b582;
+}
+
+.buttonsrr {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color:   #ff8400;
+}
+
+.buttonsrr:hover {
+-fx-background-color: #ed7c02;
+}
+
+.buttonsrr:pressed {
+-fx-background-color: #fa8a11;
+}
+
+.buttonvrl {
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+-fx-background-color: #3873ff;
+}
+
+.buttonvrl:hover {
+-fx-background-color: #0041db;
+}
+
+.buttonvrl:pressed {
+-fx-background-color: #2162fc;
+}
+
+.pane0{
+-fx-background-color:  #f4f4f4;
+}
+
+.pane01{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 20, 0, 0.0, 0.0);
+-fx-background-radius: 20px;
+-fx-background-color:  #FFF;
+}
+.pane1{
+-fx-background-color:  #f4f4f4;
+}
+.pane2{
+-fx-background-color:  #f4f4f4;
+}
+.pane3{
+-fx-background-color:  #f4f4f4;
+}
+.pane4{
+-fx-background-color:  #f4f4f4;
+}
+
+.button4 {
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+}
+
+.button4:hover {
+-fx-background-color: #1c61eb;
+}
+
+.button4:pressed {
+-fx-background-color: #0764fa;
+}
+
+.text-input1{
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: transparent;
+    -fx-text-fill: #767676;
+    -fx-background-radius: 5px;
+}
+
+.dashbtn{
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-background-color: linear-gradient(to bottom left, #BEAEF3, #7D87EA);
+}
+
+.dashbtn:hover {
+-fx-background-color: #a287fa
+;
+}
+
+.dashbtn:pressed {
+-fx-background-color: linear-gradient(to bottom left, #BEAEF3, #7D87EA);
+}
+
+.dashbtn2{
+ -fx-border-radius: 20px;
+ -fx-background-radius: 20px;
+ -fx-background-color: linear-gradient(to bottom left, #82c6ff, #479eff);
+ }
+
+ .dashbtn2:hover {
+ -fx-background-color: #5ba4f5;
+ }
+
+ .dashbtn2:pressed {
+  -fx-background-color: linear-gradient(to bottom left, #82c6ff, #479eff);
+ }
+
+.dashbtn3{
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-background-color: linear-gradient(to bottom left, #ffb969, #fe8719);
+}
+
+.dashbtn3:hover {
+-fx-background-color: #f59525;
+}
+
+.dashbtn3:pressed {
+-fx-background-color: linear-gradient(to bottom left, #ffb969, #fe8719);
+}
+
+.dashbtn4{
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-background-color: linear-gradient(to bottom left, #ff7a7a, #f04435);
+}
+
+.dashbtn4:hover {
+-fx-background-color: #fc573a;
+}
+
+.dashbtn4:pressed {
+-fx-background-color: linear-gradient(to bottom left, #ff7a7a, #f04435);
+}
+
+.dashbtn5{
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-background-color: linear-gradient(to bottom left, #5feded, #10adc2);
+}
+
+.dashbtn5:hover {
+-fx-background-color: #17bfbf;
+}
+
+.dashbtn5:pressed {
+-fx-background-color: linear-gradient(to bottom left, #5feded, #10adc2);
+}
+
+.dashbtn6{
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+-fx-background-color: linear-gradient(to bottom left, #2bff67, #00bf36);
+}
+
+.dashbtn6:hover {
+-fx-background-color: #26d156;
+}
+
+.dashbtn6:pressed {
+-fx-background-color: linear-gradient(to bottom left, #2bff67, #00bf36);
+}
+
+.dashpane1{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 20, 0, 0.0, 0.0);
+-fx-background-color: #FFF;
+}
+
+.table-view {
+-fx-background-color:#fff;
+-fx-background-radius:14 14 0 0;
+}
+
+.table-view .column-header-background{
+-fx-background-color: #ff3636;
+-fx-background-radius:20 20 0 0;
+
+}
+
+.table-view .column-header, .table-view .filler{
+-fx-size:50px;
+-fx-border-width: 0 0 10 0;
+-fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+-fx-text-fill: white ;
+}
+
+.table-row-cell: hover {
+    -fx-text-background-color: red;
+}
+.table-row-cell: odd{
+    -fx-border-color:#f4f4f4;
+    -fx-background-color: #fff;
+}
+.table-row-cell: even{
+    -fx-border-color:#f4f4f4;
+    -fx-background-color: #fff;
+}
+.table-row-cell: focused {
+    -fx-text-background-color: red;
+}
+
+.table-view1 {
+-fx-background-color:#fff;
+-fx-background-radius:14 14 0 0;
+}
+
+.table-view1 .column-header-background{
+-fx-background-color: #9000ff;
+-fx-background-radius:20 20 0 0;
+
+}
+
+.table-view1 .column-header, .table-view .filler{
+-fx-size:50px;
+-fx-border-width: 0 0 10 0;
+-fx-background-color:transparent;
+}
+
+.table-view1 .column-header .label {
+-fx-text-fill: white ;
+}
+
+.table-view2 {
+-fx-background-color:#fff;
+-fx-background-radius:14 14 0 0;
+}
+
+.table-view2 .column-header-background{
+-fx-background-color: #00ba85;
+-fx-background-radius:20 20 0 0;
+
+}
+
+.table-view2 .column-header, .table-view .filler{
+-fx-size:50px;
+-fx-border-width: 0 0 10 0;
+-fx-background-color:transparent;
+}
+
+.table-view2 .column-header .label {
+-fx-text-fill: white ;
+}
+
+.table-view3 {
+-fx-background-color:#fff;
+-fx-background-radius:14 14 0 0;
+}
+
+.table-view3 .column-header-background{
+-fx-background-color: #ff8400;
+-fx-background-radius:20 20 0 0;
+
+}
+
+.table-view3 .column-header, .table-view .filler{
+-fx-size:50px;
+-fx-border-width: 0 0 10 0;
+-fx-background-color:transparent;
+}
+
+.table-view3 .column-header .label {
+-fx-text-fill: white ;
+}
+
+.table-view4 {
+-fx-background-color:#fff;
+-fx-background-radius:14 14 0 0;
+}
+
+.table-view4 .column-header-background{
+-fx-background-color: #3873ff;
+-fx-background-radius:20 20 0 0;
+
+}
+
+.table-view4 .column-header, .table-view .filler{
+-fx-size:50px;
+-fx-border-width: 0 0 10 0;
+-fx-background-color:transparent;
+}
+
+.table-view4 .column-header .label {
+-fx-text-fill: white ;
+}

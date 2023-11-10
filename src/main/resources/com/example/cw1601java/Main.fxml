@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw1601java.Controller">
+   <children>
+      <StackPane layoutX="330.0" prefHeight="800.0" prefWidth="952.0">
+         <children>
+            <Pane fx:id="pneSortbyDate" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar4" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort By Date" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bars-sort%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="164.0" prefHeight="614.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="#767676" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort Race Table By Date" wrappingWidth="272.536865234375">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="VRLTable" layoutX="5.0" layoutY="89.0" prefHeight="511.0" prefWidth="878.0" styleClass="table-view4" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="dateColumn1" prefWidth="171.199951171875" text="Race Date" />
+                              <TableColumn fx:id="LocationColumn1" prefWidth="135.199951171875" text="Race Location" />
+                              <TableColumn fx:id="FDriverColumn1" prefWidth="109.5999755859375" text="1st Place" />
+                              <TableColumn fx:id="SDriverColumn1" prefWidth="102.4000244140625" text="2nd Place" />
+                              <TableColumn fx:id="TDriverColumn1" prefWidth="105.5999755859375" text="3rd Place" />
+                              <TableColumn fx:id="FPoints1" prefWidth="89.5999755859375" text="1st points" />
+                              <TableColumn fx:id="SPoints1" prefWidth="84.800048828125" text="2nd points" />
+                              <TableColumn fx:id="TPoints1" prefWidth="75.0" text="3rd points" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnvrlclearall" graphicTextGap="7.0" layoutX="755.0" layoutY="36.0" mnemonicParsing="false" onAction="#VrlClearAll" prefHeight="40.0" prefWidth="119.0" styleClass="buttonvrl" stylesheets="@Style.css" text="Clear All" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@broom.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="srrLabel1" layoutX="184.0" layoutY="19.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                        <Label fx:id="msgLabel2" layoutX="184.0" layoutY="18.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                        <Button fx:id="btnvrl" graphicTextGap="7.0" layoutX="626.0" layoutY="36.0" mnemonicParsing="false" onAction="#sortByDate" prefHeight="40.0" prefWidth="119.0" styleClass="buttonvrl" stylesheets="@Style.css" text="Sort By Date" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@bars-sort%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="pneViewStandings" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar2" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Standings" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@eye%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="164.0" prefHeight="614.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="#767676" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standings Table" wrappingWidth="137.3367919921875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="DetailsTable2" layoutX="5.0" layoutY="104.0" prefHeight="500.0" prefWidth="879.0" styleClass="table-view1" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="NameColumn2" prefWidth="375.199951171875" text="Name" />
+                              <TableColumn fx:id="AgeColumn2" prefWidth="60.800048828125" text="Age" />
+                              <TableColumn fx:id="TeamColumn2" prefWidth="176.0" text="Team" />
+                              <TableColumn fx:id="CarColumn2" prefWidth="154.39990234375" text="Car" />
+                              <TableColumn fx:id="CurrentPointsColumn2" prefWidth="110.4000244140625" text="Current Points" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="SearchField1" layoutX="89.0" layoutY="49.0" onKeyReleased="#keyset1" prefHeight="40.0" prefWidth="252.0" promptText="Enter the Driver Name" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Label layoutX="30.0" layoutY="57.0" prefHeight="24.0" prefWidth="59.0" text="Search : " textFill="#767676" />
+                        <Button fx:id="btnSortbyCP" graphicTextGap="7.0" layoutX="699.0" layoutY="49.0" mnemonicParsing="false" onAction="#sortByCP" prefHeight="40.0" prefWidth="175.0" styleClass="buttonsort" stylesheets="@Style.css" text="Sort By Current Points" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@bars-sort%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="msgLabel3" layoutX="184.0" layoutY="30.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="pneDataManagement" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar5" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Management" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@folder%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="164.0" prefHeight="614.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="#767676" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Manager" wrappingWidth="137.3367919921875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="DetailsTable3" layoutX="5.0" layoutY="104.0" prefHeight="500.0" prefWidth="879.0" styleClass="table-view2" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="NameColumn3" prefWidth="375.199951171875" text="Name" />
+                              <TableColumn fx:id="AgeColumn3" prefWidth="60.800048828125" text="Age" />
+                              <TableColumn fx:id="TeamColumn3" prefWidth="176.0" text="Team" />
+                              <TableColumn fx:id="CarColumn3" prefWidth="154.39990234375" text="Car" />
+                              <TableColumn fx:id="CurrentPointsColumn3" prefWidth="110.4000244140625" text="Current Points" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="SearchField2" layoutX="89.0" layoutY="49.0" onKeyReleased="#keyset2" prefHeight="40.0" prefWidth="252.0" promptText="Enter the Driver Name" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Label layoutX="30.0" layoutY="57.0" prefHeight="24.0" prefWidth="59.0" text="Search : " textFill="#767676" />
+                        <Button fx:id="btnSaveData" graphicTextGap="7.0" layoutX="495.0" layoutY="49.0" mnemonicParsing="false" onAction="#SaveData" prefHeight="40.0" prefWidth="119.0" styleClass="buttonsave" stylesheets="@Style.css" text="Save Data" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@folder-download%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnLoadData" graphicTextGap="7.0" layoutX="627.0" layoutY="49.0" mnemonicParsing="false" onAction="#LoadData" prefHeight="40.0" prefWidth="119.0" styleClass="buttonsave" stylesheets="@Style.css" text="Load Data" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@folder-upload.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnClearAllData" graphicTextGap="7.0" layoutX="755.0" layoutY="49.0" mnemonicParsing="false" onAction="#ClearAll" prefHeight="40.0" prefWidth="119.0" styleClass="buttonsave" stylesheets="@Style.css" text="Clear All Data" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@broom.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="msgLabel1" layoutX="184.0" layoutY="19.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="pneDriverManagement" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar1" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Management" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user-gear%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="165.0" prefHeight="235.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <TextField fx:id="TeamField" layoutX="51.0" layoutY="179.0" prefHeight="27.0" prefWidth="340.0" styleClass="text-input1" stylesheets="@Style.css" />
+                        <TextField fx:id="NameField" layoutX="51.0" layoutY="66.0" prefHeight="27.0" prefWidth="340.0" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Button fx:id="btnAdd" graphicTextGap="7.0" layoutX="574.0" layoutY="172.0" mnemonicParsing="false" onAction="#addDriver" prefHeight="40.0" prefWidth="90.0" styleClass="buttonadd" stylesheets="@Style.css" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@user-add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Text fill="#767676" layoutX="43.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Name " wrappingWidth="102.0" />
+                        <Text fill="#767676" layoutX="43.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Age" wrappingWidth="118.936767578125" />
+                        <TextField fx:id="CarField" layoutX="479.0" layoutY="66.0" prefHeight="27.0" prefWidth="340.0" styleClass="text-input1" stylesheets="@Style.css" />
+                        <TextField fx:id="AgeField" layoutX="51.0" layoutY="123.0" prefHeight="27.0" prefWidth="340.0" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Button fx:id="btnClear" graphicTextGap="7.0" layoutX="479.0" layoutY="172.0" mnemonicParsing="false" onAction="#cleardata" prefHeight="40.0" prefWidth="90.0" styleClass="buttonclear" stylesheets="@Style.css" text="Clear" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@broom.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Text fill="#767676" layoutX="23.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Details" wrappingWidth="118.936767578125">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnDelete" graphicTextGap="7.0" layoutX="670.0" layoutY="172.0" mnemonicParsing="false" onAction="#deleteDriver" prefHeight="40.0" prefWidth="90.0" styleClass="buttondelete" stylesheets="@Style.css" text="Delete" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@delete-user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnUpdate" graphicTextGap="7.0" layoutX="765.0" layoutY="172.0" mnemonicParsing="false" onAction="#updateDriver" prefHeight="40.0" prefWidth="90.0" styleClass="buttonupdate" stylesheets="@Style.css" text="Update" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="msgLabel" layoutX="184.0" layoutY="30.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                        <TextField fx:id="CurrentPointsField" layoutX="479.0" layoutY="123.0" prefHeight="27.0" prefWidth="340.0" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Text fill="#767676" layoutX="43.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Team" wrappingWidth="118.936767578125" />
+                        <Text fill="#767676" layoutX="473.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Car" wrappingWidth="118.936767578125" />
+                        <Text fill="#767676" layoutX="473.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Points" wrappingWidth="118.936767578125" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="416.0" prefHeight="362.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <TableView fx:id="DetailsTable" layoutX="5.0" layoutY="63.0" onMouseClicked="#fillFields" prefHeight="291.0" prefWidth="879.0" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="NameColumn" prefWidth="375.199951171875" text="Name" />
+                              <TableColumn fx:id="AgeColumn" prefWidth="60.800048828125" text="Age" />
+                              <TableColumn fx:id="TeamColumn" prefWidth="176.0" text="Team" />
+                              <TableColumn fx:id="CarColumn" prefWidth="154.39990234375" text="Car" />
+                              <TableColumn fx:id="CurrentPointsColumn" prefWidth="110.4000244140625" text="Current Points" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="SearchField" layoutX="81.0" layoutY="14.0" onKeyReleased="#keyset" prefHeight="40.0" prefWidth="252.0" promptText="Enter the Driver Name" styleClass="text-input1" stylesheets="@Style.css" />
+                        <Label layoutX="30.0" layoutY="22.0" prefHeight="24.0" prefWidth="59.0" text="Search : " textFill="#767676" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="pneSimulateRace" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar3" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulate Random Race" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shuffle%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="164.0" prefHeight="614.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="#767676" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulate Race" wrappingWidth="137.3367919921875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="SRRTable" layoutX="5.0" layoutY="119.0" prefHeight="485.0" prefWidth="878.0" styleClass="table-view3" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="dateColumn" prefWidth="171.199951171875" text="Race Date" />
+                              <TableColumn fx:id="LocationColumn" prefWidth="135.199951171875" text="Race Location" />
+                              <TableColumn fx:id="FDriverColumn" prefWidth="109.5999755859375" text="1st Place" />
+                              <TableColumn fx:id="SDriverColumn" prefWidth="102.4000244140625" text="2nd Place" />
+                              <TableColumn fx:id="TDriverColumn" prefWidth="105.5999755859375" text="3rd Place" />
+                              <TableColumn fx:id="FPoints" prefWidth="89.5999755859375" text="1st points" />
+                              <TableColumn fx:id="SPoints" prefWidth="84.800048828125" text="2nd points" />
+                              <TableColumn fx:id="TPoints" prefWidth="75.0" text="3rd points" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnSimulate" graphicTextGap="7.0" layoutX="699.0" layoutY="61.0" mnemonicParsing="false" onAction="#simulateRace" prefHeight="40.0" prefWidth="175.0" styleClass="buttonsrr" stylesheets="@Style.css" text="Simulate Random Race" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@shuffle%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="srrLabel" layoutX="184.0" layoutY="19.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                        <DatePicker fx:id="datePick" layoutX="138.0" layoutY="61.0" prefHeight="40.0" prefWidth="194.0" />
+                        <Label layoutX="30.0" layoutY="69.0" prefHeight="24.0" prefWidth="108.0" text="Select Race Date :" textFill="#767676" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="fullDetails" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="-9.0" layoutY="41.0" prefHeight="107.0" prefWidth="963.0" styleClass="bar3" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="129.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulate Random Race" wrappingWidth="362.93670654296875">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="49.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shuffle%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="164.0" prefHeight="614.0" prefWidth="888.0" styleClass="pane01" stylesheets="@Style.css">
+                     <children>
+                        <Text fill="#767676" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Race Details" wrappingWidth="137.3367919921875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="FDTable" layoutX="5.0" layoutY="55.0" prefHeight="549.0" prefWidth="878.0" styleClass="table-view3" stylesheets="@Style.css">
+                           <columns>
+                              <TableColumn fx:id="FDDate" prefWidth="192.800048828125" text="Race Date" />
+                              <TableColumn fx:id="FDLocation" prefWidth="166.39990234375" text="Race Location" />
+                              <TableColumn fx:id="FDName" prefWidth="190.4000244140625" text="Driver Name" />
+                              <TableColumn fx:id="FDCurrentPoints" prefWidth="172.00018310546875" text="Driver Current Points" />
+                              <TableColumn fx:id="FDPosition" prefWidth="159.9998779296875" text="Driver Position" />
+                           </columns>
+                        </TableView>
+                        <Label fx:id="srrLabel2" layoutX="184.0" layoutY="19.0" prefHeight="17.0" prefWidth="520.0" textAlignment="CENTER" />
+                        <Button fx:id="backBtn" layoutX="779.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="Back" textFill="#ff8400">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@arrow-small-left.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="pneDashboard" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="954.0" styleClass="pane0" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="452.0" layoutY="-290.0" prefHeight="440.0" prefWidth="609.0" rotate="-39.3" style="-fx-background-color: #ff4d71; -fx-background-radius: 70;" />
+                  <Text layoutX="64.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="167.7366943359375">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="-173.0" layoutY="616.0" prefHeight="478.0" prefWidth="609.0" rotate="-39.3" style="-fx-background-color: #4797ff; -fx-background-radius: 70;" />
+                  <Pane layoutX="64.0" layoutY="301.0" prefHeight="463.0" prefWidth="824.0" style="-fx-background-radius: 20;" styleClass="dashpane1" stylesheets="@Style.css">
+                     <children>
+                        <TableView fx:id="DetailsTable1" layoutX="12.0" layoutY="87.0" prefHeight="362.0" prefWidth="807.0">
+                           <columns>
+                              <TableColumn fx:id="NameColumn1" prefWidth="268.7999572753906" text="Name" />
+                              <TableColumn fx:id="AgeColumn1" prefWidth="71.19989013671875" text="Age" />
+                              <TableColumn fx:id="TeamColumn1" prefWidth="170.39990234375" text="Team" />
+                              <TableColumn fx:id="CarColumn1" prefWidth="164.800048828125" text="Car" />
+                              <TableColumn fx:id="CurrentPointsColumn1" prefWidth="127.199951171875" text="Current Points" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="26.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drivers Details" wrappingWidth="167.7366943359375">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="DashDriverManagement" contentDisplay="TOP" graphicTextGap="10.0" layoutX="64.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="150.0" prefWidth="150.0" styleClass="dashbtn4" stylesheets="@Style.css" text="Driver Mnagement" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user-gear%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="DashViewStandings" contentDisplay="TOP" graphicTextGap="10.0" layoutX="232.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="150.0" prefWidth="150.0" styleClass="dashbtn" stylesheets="@Style.css" text="View Standings" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@eye%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="DashSimulateRace" contentDisplay="TOP" graphicTextGap="10.0" layoutX="400.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="150.0" prefWidth="150.0" styleClass="dashbtn3" stylesheets="@Style.css" text="Simulate Race" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shuffle%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="DashSortByDate" contentDisplay="TOP" graphicTextGap="10.0" layoutX="569.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="150.0" prefWidth="150.0" styleClass="dashbtn2" stylesheets="@Style.css" text="Sort By Date" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bars-sort%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="DashDataManagement" contentDisplay="TOP" graphicTextGap="10.0" layoutX="737.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="150.0" prefWidth="150.0" styleClass="dashbtn5" stylesheets="@Style.css" text="Data Management" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@folder%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <VBox prefHeight="800.0" prefWidth="330.0">
+         <children>
+            <AnchorPane prefHeight="805.0" prefWidth="330.0" styleClass="side_ankerpane" stylesheets="@Style.css">
+               <children>
+                  <Pane layoutX="39.0" layoutY="38.0" prefHeight="88.0" prefWidth="252.0" styleClass="inner_pane" stylesheets="@Style.css">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="244.0" layoutX="28.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@world-rally-cross-championship-high-resolution-logo-white-on-transparent-background.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnDriverManagement" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="Driver Management" textFill="#767676">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user-gear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnViewStandings" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="View Standings" textFill="#767676">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@eye.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSimulateRace" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="Simulate Race" textFill="#767676">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shuffle.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSortByDate" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="Sort By Date" textFill="#767676">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bars-sort.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDataManagement" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="Data Management" textFill="#767676">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnExit" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="123.0" layoutY="729.0" mnemonicParsing="false" onAction="#close" prefHeight="40.0" prefWidth="84.0" styleClass="exitbtn" stylesheets="@Style.css" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@exit%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Button>
+                  <Line endX="100.0" layoutX="158.0" layoutY="447.0" startX="-100.0" stroke="#9e9e9e" />
+                  <Button fx:id="btnDashboard" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="-1.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="50.0" prefWidth="330.0" styleClass="button1" stylesheets="@Style.css" text="Dashboard" textFill="#767676">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dashboard%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

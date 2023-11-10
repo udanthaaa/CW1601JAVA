@@ -1,0 +1,9 @@
+Thenuki Rivinadee,25,Team Ninjas,Mercedes Benz E350e,127
+Dimuthu Rukmal,22,Team Ninjas,Audi R8,69
+Ahamed Ammar,18,Team Ninjas,Lamborghini Aventador,70
+Randesh Daluwatte,19,Team RDC,Mercedes Benz C200,93
+Lovindya Hangilipola,25,Team FEROX,LaFerrari Aperta,76
+Shenon Ramiro,24,Team FEROX,Porsche Carrera GT,46
+Sankalpa Kulathunga,30,Team Nitro,Ferrari F40,34
+Akindu Kithmuka,27,Team Nitro,Pagani Huayra,72
+Menuka jayasuriya,20,Team RDC,BMW 318i,74

@@ -1,0 +1,15 @@
+2023-05-04,Barcelona,abc,133,1
+2023-05-04,Barcelona,dsfsdf,461,2
+2023-05-04,Barcelona,dfg,350,3
+2023-05-19,Nyirád,abc,143,1
+2023-05-19,Nyirád,dsfsdf,468,2
+2023-05-19,Nyirád,dfg,355,3
+2023-05-02,Nyirád,abc,153,1
+2023-05-02,Nyirád,dsfsdf,475,2
+2023-05-02,Nyirád,dfg,360,3
+2023-04-04,Norway,dfg,370,1
+2023-04-04,Norway,abc,160,2
+2023-04-04,Norway,dsfsdf,480,3
+2023-09-20,Montalegre,fdfsdf,44,1
+2023-09-20,Montalegre,damika,52,2
+2023-09-20,Montalegre,fdfsdff,39,3
